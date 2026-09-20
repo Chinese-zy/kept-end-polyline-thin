@@ -1,0 +1,7 @@
+{
+  "name": "kept-end-polyline-thin",
+  "private": true,
+  "dependencies": {
+    "simplify-js": "1.2.4"
+  }
+}
