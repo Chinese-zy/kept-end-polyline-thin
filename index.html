@@ -1,6 +1,18 @@
 <!doctype html>
 <meta charset="utf-8">
 <title>折线抽稀</title>
+<style>
+  body { font: 13px/1.5 system-ui, sans-serif; margin: 16px; }
+  #c { border: 1px solid #ddd; background: #fafafa; }
+  .legend span { margin-right: 16px; white-space: nowrap; }
+  .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; vertical-align: middle; }
+</style>
 <script src="thin.js"></script>
 <canvas id="c" width="640" height="360"></canvas>
+<div class="legend">
+  <span><i class="dot" style="background:#999"></i> 原始折线</span>
+  <span><i class="dot" style="background:#c30"></i> 抽稀后</span>
+  <span><i class="dot" style="background:#06c"></i> 保留的端点 / 环闭合点</span>
+  <span><i class="dot" style="background:#c30;outline:1px solid #c30;background:#fff"></i> 保留的贴线短段点</span>
+</div>
 <script src="page.js"></script>
